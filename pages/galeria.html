@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Galería Multimedia - Hack The Future - Fotos, videos y momentos del programa de transformación digital." />
+    <meta name="keywords" content="galería, multimedia, fotos, videos, Hack The Future, eventos" />
+    <meta name="author" content="Hack The Future" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Galería Multimedia - Hack The Future" />
+    <meta property="og:description" content="Fotos, videos y momentos del programa de transformación digital." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hackthefuture.org/pages/galeria.html" />
+    <meta property="og:image" content="/public/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Galería Multimedia" />
+    <meta name="twitter:description" content="Fotos, videos y momentos del programa." />
+    
+    <title>Galería Multimedia - Hack The Future</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../css/main.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/main.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Galería Multimedia",
+        "description": "Galería de fotos y videos de Hack The Future",
+        "url": "https://hackthefuture.org/pages/galeria.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Hack The Future"
+        }
+    }
+    </script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 20l6 6 10-12" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-inter font-bold text-primary">Hack The Future</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_mission_driven_impact_hub.html" class="text-text-secondary hover:text-primary transition-colors">Inicio</a>
+                    <a href="programs_hub_interactive_impact_explorer.html" class="text-text-secondary hover:text-primary transition-colors">Programas</a>
+                    <a href="get_involved_central_engagement_matching_platform.html" class="text-text-secondary hover:text-primary transition-colors">Participar</a>
+                    <a href="impact_stories_multimedia_success_showcase.html" class="text-text-secondary hover:text-primary transition-colors">Historias</a>
+                    <a href="about_ecosystem_organizational_transparency_hub.html" class="text-text-secondary hover:text-primary transition-colors">Acerca de</a>
+                    <a href="resource_center_educational_impact_hub.html" class="text-text-secondary hover:text-primary transition-colors">Recursos</a>
+                    <a href="community_platform_supporter_connection_network.html" class="text-text-secondary hover:text-primary transition-colors">Comunidad</a>
+                    <a href="contact_multi_channel_connection_hub.html" class="text-text-secondary hover:text-primary transition-colors">Contacto</a>
+                    <a href="donation_experience_impact_driven_giving_portal.html" class="btn-primary">Donar Ahora</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage_mission_driven_impact_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Inicio</a>
+                <a href="programs_hub_interactive_impact_explorer.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Programas</a>
+                <a href="get_involved_central_engagement_matching_platform.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Participar</a>
+                <a href="impact_stories_multimedia_success_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Historias</a>
+                <a href="about_ecosystem_organizational_transparency_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Acerca de</a>
+                <a href="resource_center_educational_impact_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Recursos</a>
+                <a href="community_platform_supporter_connection_network.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Comunidad</a>
+                <a href="contact_multi_channel_connection_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contacto</a>
+                <a href="donation_experience_impact_driven_giving_portal.html" class="block mx-3 my-2 btn-primary text-center">Donar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-6">
+                Galería <span class="text-gradient-primary">Multimedia</span>
+            </h1>
+            <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                Explora los momentos más importantes del programa Hack The Future. Fotos, videos y testimonios que capturan la transformación digital de Manrique.
+            </p>
+            
+            <!-- Gallery Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-primary mb-2">150+</div>
+                    <div class="text-sm text-text-secondary">Fotos</div>
+                </div>
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-secondary mb-2">25+</div>
+                    <div class="text-sm text-text-secondary">Videos</div>
+                </div>
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-accent mb-2">12</div>
+                    <div class="text-sm text-text-secondary">Eventos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="py-8 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="filter-btn active" data-filter="todos">📸 Todos</button>
+                <button class="filter-btn" data-filter="eventos">🎉 Eventos</button>
+                <button class="filter-btn" data-filter="clases">👨‍🏫 Clases</button>
+                <button class="filter-btn" data-filter="graduaciones">🎓 Graduaciones</button>
+                <button class="filter-btn" data-filter="mentorias">👨‍💼 Mentorías</button>
+                <button class="filter-btn" data-filter="comunidad">🤝 Comunidad</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Eventos -->
+                <div class="gallery-item eventos" data-category="eventos">
+                    <div class="gallery-card cursor-pointer" onclick="openLightbox('evento-1')">
+                        <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=300&fit=crop" alt="Demo Day 2024" class="w-full h-48 object-cover rounded-t-lg" />
+                        <div class="p-4">
+                            <h3 class="font-inter font-semibold text-text-primary">Demo Day 2024</h3>
+                            <p class="text-sm text-text-secondary">Presentación de proyectos finales</p>
+                            <span class="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded mt-2">Eventos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item eventos" data-category="eventos">
+                    <div class="gallery-card cursor-pointer" onclick="openLightbox('evento-2')">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop" alt="Workshop IA" class="w-full h-48 object-cover rounded-t-lg" />
+                        <div class="p-4">
+                            <h3 class="font-inter font-semibold text-text-primary">Workshop IA</h3>
+                            <p class="text-sm text-text-secondary">Capacitación en inteligencia artificial</p>
+                            <span class="inline-block bg-primary-100 text-primary-800 text-xs px-2 py-1 rounded mt-2">Eventos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clases -->
+                <div class="gallery-item clases" data-category="clases">
+                    <div class="gallery-card cursor-pointer" onclick="openLightbox('clase-1')">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="Clase de Desarrollo Web" class="w-full h-48 object-cover rounded-t-lg" />
+                        <div class="p-4">
+                            <h3 class="font-inter font-semibold text-text-primary">Clase de Desarrollo Web</h3>
+                            <p class="text-sm text-text-secondary">Aprendiendo HTML, CSS y JavaScript</p>
+                            <span class="inline-block bg-secondary-100 text-secondary-800 text-xs px-2 py-1 rounded mt-2">Clases</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item clases" data-category="clases">
+                    <div class="gallery-card cursor-pointer" onclick="openLightbox('clase-2')">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Sesión de Marketing Digital" class="w-full h-48 object-cover rounded-t-lg" />
+                        <div class="p-4">
+                            <h3 class="font-inter font-semibold text-text-primary">Sesión de Marketing Digital</h3>
+                            <p class="text-sm text-text-secondary">Estrategias de redes sociales</p>
+                            <span class="inline-block bg-secondary-100 text-secondary-800 text-xs px-2 py-1 rounded mt-2">Clases</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graduaciones -->
+                <div class="gallery-item graduaciones" data-category="graduaciones">
+                    <div class="gallery-card cursor-pointer" onclick="openLightbox('graduacion-1')">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110cfe1?w=400&h=300&fit=crop" alt="Ceremonia de Graduación" class="w-full h-48 object-cover rounded-t-lg" />
+                        <div class="p-4">
+                            <h3 class="font-inter font-semibold text-text-primary">Ceremonia de Graduación</h3>
+                            <p class="text-sm text-text-secondary">Primera promoción de Hack The Future</p>
+                            <span class="inline-block bg-accent-100 text-accent-800 text-xs px-2 py-1 rounded mt-2">Graduaciones</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentorías -->
+                <div class="gallery-item mentorias" data-category="mentorias">
+                    <div class="gallery-card cursor-pointer" onclick="openLightbox('mentoria-1')">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Sesión de Mentoría" class="w-full h-48 object-cover rounded-t-lg" />
+                        <div class="p-4">
+                            <h3 class="font-inter font-semibold text-text-primary">Sesión de Mentoría</h3>
+                            <p class="text-sm text-text-secondary">Mentores compartiendo experiencia</p>
+                            <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded mt-2">Mentorías</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comunidad -->
+                <div class="gallery-item comunidad" data-category="comunidad">
+                    <div class="gallery-card cursor-pointer" onclick="openLightbox('comunidad-1')">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop" alt="Networking Comunitario" class="w-full h-48 object-cover rounded-t-lg" />
+                        <div class="p-4">
+                            <h3 class="font-inter font-semibold text-text-primary">Networking Comunitario</h3>
+                            <p class="text-sm text-text-secondary">Conectando talentos locales</p>
+                            <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded mt-2">Comunidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item comunidad" data-category="comunidad">
+                    <div class="gallery-card cursor-pointer" onclick="openLightbox('comunidad-2')">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Taller Comunitario" class="w-full h-48 object-cover rounded-t-lg" />
+                        <div class="p-4">
+                            <h3 class="font-inter font-semibold text-text-primary">Taller Comunitario</h3>
+                            <p class="text-sm text-text-secondary">Familias participando en el programa</p>
+                            <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded mt-2">Comunidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center">
+        <div class="relative max-w-4xl mx-auto p-4">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-2xl hover:text-gray-300">
+                ✕
+            </button>
+            <div id="lightbox-content" class="text-center">
+                <img id="lightbox-image" src="" alt="" class="max-w-full max-h-96 mx-auto rounded-lg" />
+                <h3 id="lightbox-title" class="text-white text-xl font-inter font-semibold mt-4"></h3>
+                <p id="lightbox-description" class="text-gray-300 mt-2"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analytics Script -->
+    <script src="../public/analytics.js"></script>
+    
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Gallery filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (filter === 'todos' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(itemId) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDescription = document.getElementById('lightbox-description');
+            
+            // Set content based on itemId
+            const itemData = {
+                'evento-1': {
+                    image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=800&h=600&fit=crop',
+                    title: 'Demo Day 2024',
+                    description: 'Presentación de proyectos finales de la primera promoción de Hack The Future'
+                },
+                'evento-2': {
+                    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
+                    title: 'Workshop IA',
+                    description: 'Capacitación intensiva en inteligencia artificial aplicada'
+                },
+                'clase-1': {
+                    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop',
+                    title: 'Clase de Desarrollo Web',
+                    description: 'Aprendiendo HTML, CSS y JavaScript para crear sitios web profesionales'
+                },
+                'clase-2': {
+                    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop',
+                    title: 'Sesión de Marketing Digital',
+                    description: 'Estrategias de redes sociales y marketing digital'
+                },
+                'graduacion-1': {
+                    image: 'https://images.unsplash.com/photo-1523050854058-8df90110cfe1?w=800&h=600&fit=crop',
+                    title: 'Ceremonia de Graduación',
+                    description: 'Primera promoción de Hack The Future celebrando sus logros'
+                },
+                'mentoria-1': {
+                    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop',
+                    title: 'Sesión de Mentoría',
+                    description: 'Mentores experimentados compartiendo conocimiento con los estudiantes'
+                },
+                'comunidad-1': {
+                    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop',
+                    title: 'Networking Comunitario',
+                    description: 'Conectando talentos locales con oportunidades globales'
+                },
+                'comunidad-2': {
+                    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop',
+                    title: 'Taller Comunitario',
+                    description: 'Familias participando activamente en el programa de transformación'
+                }
+            };
+            
+            const data = itemData[itemId];
+            if (data) {
+                lightboxImage.src = data.image;
+                lightboxTitle.textContent = data.title;
+                lightboxDescription.textContent = data.description;
+                lightbox.classList.remove('hidden');
+            }
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+        }
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+
+    <style>
+        .filter-btn {
+            @apply px-4 py-2 rounded-lg font-inter font-semibold transition-all duration-300;
+        }
+        .filter-btn.active {
+            @apply bg-primary text-white;
+        }
+        .filter-btn:not(.active) {
+            @apply bg-surface text-text-secondary hover:bg-primary-50;
+        }
+        .gallery-card {
+            @apply bg-surface rounded-lg shadow-subtle transition-all duration-300 hover:shadow-lg hover:scale-105;
+        }
+    </style>
+</body>
+</html> 

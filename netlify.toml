@@ -1,0 +1,95 @@
+[build]
+  command = "npm run build"
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/public/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/public/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/public/favicon.ico"
+  status = 200
+
+# Redirects para páginas principales
+[[redirects]]
+  from = "/home"
+  to = "/pages/homepage_mission_driven_impact_hub.html"
+  status = 301
+
+[[redirects]]
+  from = "/programs"
+  to = "/pages/programs_hub_interactive_impact_explorer.html"
+  status = 301
+
+[[redirects]]
+  from = "/get-involved"
+  to = "/pages/get_involved_central_engagement_matching_platform.html"
+  status = 301
+
+[[redirects]]
+  from = "/stories"
+  to = "/pages/impact_stories_multimedia_success_showcase.html"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/pages/about_ecosystem_organizational_transparency_hub.html"
+  status = 301
+
+[[redirects]]
+  from = "/resources"
+  to = "/pages/resource_center_educational_impact_hub.html"
+  status = 301
+
+[[redirects]]
+  from = "/community"
+  to = "/pages/community_platform_supporter_connection_network.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/pages/contact_multi_channel_connection_hub.html"
+  status = 301
+
+[[redirects]]
+  from = "/donate"
+  to = "/pages/donation_experience_impact_driven_giving_portal.html"
+  status = 301
+
+[[redirects]]
+  from = "/events"
+  to = "/pages/events_calendar_interactive_community_experience_portal.html"
+  status = 301 

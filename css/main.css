@@ -155,10 +155,8 @@ html,
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  -moz-tab-size: 4;
   /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -491,13 +489,6 @@ textarea {
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
 
 input::placeholder,
 textarea::placeholder {
@@ -1130,7 +1121,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .w-fit{
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -1619,8 +1609,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .p-1{
@@ -1786,11 +1775,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 2.5rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1811,12 +1795,21 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 .font-semibold{
   font-weight: 600;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .italic{
@@ -1898,6 +1891,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-all{
@@ -2187,6 +2186,29 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:not-sr-only:focus{
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+.focus\:absolute:focus{
+  position: absolute;
+}
+
+.focus\:left-4:focus{
+  left: 1rem;
+}
+
+.focus\:top-4:focus{
+  top: 1rem;
+}
+
 .focus\:ring-primary:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(37 99 235 / var(--tw-ring-opacity, 1));
@@ -2270,6 +2292,15 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
   }
 
+  .md\:p-8{
+    padding: 2rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -2278,6 +2309,11 @@ h1, h2, h3, h4, h5, h6 {
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

@@ -1,50 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hack The Future - Empowering Social Change</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <meta name="description" content="Proyecto social que capacita jóvenes de Manrique en habilidades digitales, IA y emprendimiento para acceder a la economía global." />
+    <meta name="keywords" content="Hack The Future, Manrique, jóvenes, habilidades digitales, IA, emprendimiento, cambio social, Colombia" />
+    <meta name="author" content="Hack The Future" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Hack The Future - Empoderando el Futuro" />
+    <meta property="og:description" content="Capacitando a 120 jóvenes de Manrique en habilidades digitales, IA y emprendimiento para acceder a la economía global." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hackthefuture.org" />
+    <meta property="og:image" content="/public/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hack The Future - Empoderando el Futuro" />
+    <meta name="twitter:description" content="Capacitando a 120 jóvenes de Manrique en habilidades digitales, IA y emprendimiento." />
+    
+    <title>Hack The Future - Transformando el Futuro Digital de Manrique</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/main.css" as="style" />
+    <link rel="preload" href="pages/homepage_mission_driven_impact_hub.html" as="document" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fnonprofit5705back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NonProfit",
+        "name": "Hack The Future",
+        "description": "Capacitando a 120 jóvenes de Manrique en habilidades digitales, IA y emprendimiento",
+        "url": "https://hackthefuture.org",
+        "logo": "https://hackthefuture.org/public/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Manrique",
+            "addressCountry": "CO"
+        },
+        "sameAs": [
+            "https://facebook.com/hackthefuture",
+            "https://twitter.com/hackthefuture",
+            "https://instagram.com/hackthefuture"
+        ]
+    }
+    </script>
 </head>
 <body class="bg-background text-text-primary">
-    <div class="min-h-screen flex items-center justify-center">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded z-50">
+        Saltar al contenido principal
+    </a>
+
+    <main id="main-content" class="min-h-screen flex items-center justify-center">
         <div class="text-center space-y-8 max-w-2xl mx-auto px-6">
             <div class="space-y-4">
                 <h1 class="text-5xl font-inter font-bold text-gradient-primary">
                     Hack The Future
                 </h1>
                 <p class="text-xl text-text-secondary font-serif">
-                    Empowering communities through transparent, meaningful social change
+                    Transformando comunidades a través de la educación digital y el emprendimiento
                 </p>
             </div>
             
-            <div class="bg-surface rounded-2xl p-8 shadow-card">
+            <div class="bg-surface rounded-2xl p-6 md:p-8 shadow-card">
                 <h2 class="text-2xl font-inter font-semibold mb-6 text-text-primary">
-                    Welcome to Your Impact Journey
+                    Bienvenido al Futuro Digital de Manrique
                 </h2>
                 <p class="text-text-secondary mb-8 font-serif">
-                    Redirecting you to discover authentic opportunities for meaningful change...
+                    Conectando jóvenes talentos con oportunidades globales. Redirigiendo hacia tu viaje de transformación...
                 </p>
                 
-                <div class="flex justify-center">
-                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+                <div class="flex justify-center" role="status" aria-label="Cargando">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary" aria-hidden="true"></div>
                 </div>
+                
+                <p class="text-sm text-text-secondary mt-4">
+                    Conectando comunidades que importan
+                </p>
             </div>
             
             <div class="text-sm text-text-secondary font-mono">
-                Building connections that matter
+                Construyendo el ecosistema digital del mañana
             </div>
         </div>
-    </div>
+    </main>
 
+    <script src="/public/analytics.js"></script>
     <script>
-        // Redirect to the homepage after a brief delay
-        setTimeout(function() {
-            window.location.href = 'pages/homepage_mission_driven_impact_hub.html';
-        }, 2000);
+        // Enhanced redirect with accessibility and error handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const redirectTimer = setTimeout(function() {
+                try {
+                    window.location.href = 'pages/homepage_mission_driven_impact_hub.html';
+                } catch (error) {
+                    console.error('Error during redirect:', error);
+                    // Fallback: show manual link
+                    const mainContent = document.querySelector('main');
+                    if (mainContent) {
+                        mainContent.innerHTML = `
+                            <div class="text-center space-y-8 max-w-2xl mx-auto px-6">
+                                <h1 class="text-4xl md:text-5xl font-inter font-bold text-gradient-primary">
+                                    Hack The Future
+                                </h1>
+                                <p class="text-lg md:text-xl text-text-secondary font-serif mb-8">
+                                    Si no fuiste redirigido automáticamente, haz clic en el enlace de abajo.
+                                </p>
+                                <a href="pages/homepage_mission_driven_impact_hub.html" 
+                                   class="btn-primary text-lg px-8 py-4 inline-flex items-center">
+                                    Continuar al Sitio Principal
+                                </a>
+                            </div>
+                        `;
+                    }
+                }
+            }, 2000);
+
+            // Clear timeout if user interacts with page
+            document.addEventListener('click', function() {
+                clearTimeout(redirectTimer);
+            });
+        });
     </script>
 <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
 </body>

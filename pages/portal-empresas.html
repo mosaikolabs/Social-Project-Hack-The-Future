@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portal de Empresas - Hack The Future - Alianzas estratégicas, patrocinio y acceso a talentos digitales." />
+    <meta name="keywords" content="empresas, alianzas, patrocinio, Hack The Future, talentos, RSE" />
+    <meta name="author" content="Hack The Future" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Portal de Empresas - Hack The Future" />
+    <meta property="og:description" content="Alianzas estratégicas, patrocinio y acceso a talentos digitales." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hackthefuture.org/pages/portal-empresas.html" />
+    <meta property="og:image" content="/public/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portal de Empresas" />
+    <meta name="twitter:description" content="Alianzas estratégicas y acceso a talentos." />
+    
+    <title>Portal de Empresas - Hack The Future</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../css/main.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/main.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Portal de Empresas",
+        "description": "Portal para alianzas empresariales con Hack The Future",
+        "url": "https://hackthefuture.org/pages/portal-empresas.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Hack The Future"
+        }
+    }
+    </script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 20l6 6 10-12" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-inter font-bold text-primary">Hack The Future</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_mission_driven_impact_hub.html" class="text-text-secondary hover:text-primary transition-colors">Inicio</a>
+                    <a href="programs_hub_interactive_impact_explorer.html" class="text-text-secondary hover:text-primary transition-colors">Programas</a>
+                    <a href="get_involved_central_engagement_matching_platform.html" class="text-text-secondary hover:text-primary transition-colors">Participar</a>
+                    <a href="impact_stories_multimedia_success_showcase.html" class="text-text-secondary hover:text-primary transition-colors">Historias</a>
+                    <a href="about_ecosystem_organizational_transparency_hub.html" class="text-text-secondary hover:text-primary transition-colors">Acerca de</a>
+                    <a href="resource_center_educational_impact_hub.html" class="text-text-secondary hover:text-primary transition-colors">Recursos</a>
+                    <a href="community_platform_supporter_connection_network.html" class="text-text-secondary hover:text-primary transition-colors">Comunidad</a>
+                    <a href="contact_multi_channel_connection_hub.html" class="text-text-secondary hover:text-primary transition-colors">Contacto</a>
+                    <a href="donation_experience_impact_driven_giving_portal.html" class="btn-primary">Donar Ahora</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage_mission_driven_impact_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Inicio</a>
+                <a href="programs_hub_interactive_impact_explorer.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Programas</a>
+                <a href="get_involved_central_engagement_matching_platform.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Participar</a>
+                <a href="impact_stories_multimedia_success_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Historias</a>
+                <a href="about_ecosystem_organizational_transparency_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Acerca de</a>
+                <a href="resource_center_educational_impact_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Recursos</a>
+                <a href="community_platform_supporter_connection_network.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Comunidad</a>
+                <a href="contact_multi_channel_connection_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contacto</a>
+                <a href="donation_experience_impact_driven_giving_portal.html" class="block mx-3 my-2 btn-primary text-center">Donar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-6">
+                Portal de <span class="text-gradient-primary">Empresas</span>
+            </h1>
+            <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                Alianzas estratégicas, patrocinio corporativo y acceso prioritario a talentos digitales capacitados. Transforma tu RSE en impacto real.
+            </p>
+            
+            <!-- Company Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-primary mb-2">15+</div>
+                    <div class="text-sm text-text-secondary">Empresas Aliadas</div>
+                </div>
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-secondary mb-2">120</div>
+                    <div class="text-sm text-text-secondary">Talentos Disponibles</div>
+                </div>
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-accent mb-2">87%</div>
+                    <div class="text-sm text-text-secondary">Tasa de Empleo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Dashboard -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-inter font-bold text-text-primary mb-12 text-center">🎯 Beneficios para Empresas</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Acceso a Talentos -->
+                <div class="card">
+                    <div class="text-center mb-6">
+                        <span class="text-4xl">👥</span>
+                        <h3 class="font-inter font-bold text-xl mt-4">Acceso Prioritario a Talentos</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-text-secondary">
+                        <li>• Primera opción para reclutar graduados</li>
+                        <li>• Perfiles pre-evaluados y capacitados</li>
+                        <li>• Habilidades técnicas verificadas</li>
+                        <li>• Red de contactos empresariales</li>
+                    </ul>
+                </div>
+
+                <!-- RSE y Sostenibilidad -->
+                <div class="card">
+                    <div class="text-center mb-6">
+                        <span class="text-4xl">🌱</span>
+                        <h3 class="font-inter font-bold text-xl mt-4">RSE y Sostenibilidad</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-text-secondary">
+                        <li>• Impacto social medible y verificable</li>
+                        <li>• Certificaciones de responsabilidad social</li>
+                        <li>• Reportes de impacto trimestrales</li>
+                        <li>• Alineación con ODS</li>
+                    </ul>
+                </div>
+
+                <!-- Visibilidad de Marca -->
+                <div class="card">
+                    <div class="text-center mb-6">
+                        <span class="text-4xl">📢</span>
+                        <h3 class="font-inter font-bold text-xl mt-4">Visibilidad de Marca</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-text-secondary">
+                        <li>• Logo en materiales del programa</li>
+                        <li>• Menciones en redes sociales</li>
+                        <li>• Presencia en eventos especiales</li>
+                        <li>• Casos de éxito destacados</li>
+                    </ul>
+                </div>
+
+                <!-- Innovación y Proyectos -->
+                <div class="card">
+                    <div class="text-center mb-6">
+                        <span class="text-4xl">💡</span>
+                        <h3 class="font-inter font-bold text-xl mt-4">Innovación y Proyectos</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-text-secondary">
+                        <li>• Proyectos de innovación conjuntos</li>
+                        <li>• Acceso a startups emergentes</li>
+                        <li>• Colaboración en investigación</li>
+                        <li>• Networking de alto nivel</li>
+                    </ul>
+                </div>
+
+                <!-- Reducción de Costos -->
+                <div class="card">
+                    <div class="text-center mb-6">
+                        <span class="text-4xl">💰</span>
+                        <h3 class="font-inter font-bold text-xl mt-4">Reducción de Costos</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-text-secondary">
+                        <li>• Procesos de reclutamiento optimizados</li>
+                        <li>• Capacitación pre-validada</li>
+                        <li>• Menor rotación de personal</li>
+                        <li>• Beneficios fiscales</li>
+                    </ul>
+                </div>
+
+                <!-- Networking Empresarial -->
+                <div class="card">
+                    <div class="text-center mb-6">
+                        <span class="text-4xl">🤝</span>
+                        <h3 class="font-inter font-bold text-xl mt-4">Networking Empresarial</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-text-secondary">
+                        <li>• Eventos exclusivos para aliados</li>
+                        <li>• Conexiones con otras empresas</li>
+                        <li>• Oportunidades de colaboración</li>
+                        <li>• Ecosistema de innovación</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Form -->
+    <section class="py-16 bg-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="card">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-8 text-center">🤝 Formulario de Alianza Empresarial</h2>
+                
+                <form id="partnership-form" class="space-y-8">
+                    <!-- Datos de la Empresa -->
+                    <div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">🏢 Datos de la Empresa</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Nombre de la Empresa *</label>
+                                <input type="text" name="companyName" class="input-field" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Sector *</label>
+                                <select name="sector" class="input-field" required>
+                                    <option value="">Selecciona el sector</option>
+                                    <option value="tecnologia">Tecnología</option>
+                                    <option value="servicios">Servicios</option>
+                                    <option value="manufactura">Manufactura</option>
+                                    <option value="comercio">Comercio</option>
+                                    <option value="finanzas">Finanzas</option>
+                                    <option value="salud">Salud</option>
+                                    <option value="educacion">Educación</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Tamaño de la Empresa *</label>
+                                <select name="companySize" class="input-field" required>
+                                    <option value="">Selecciona el tamaño</option>
+                                    <option value="pequena">Pequeña (1-50 empleados)</option>
+                                    <option value="mediana">Mediana (51-200 empleados)</option>
+                                    <option value="grande">Grande (200+ empleados)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Sitio Web</label>
+                                <input type="url" name="website" class="input-field" placeholder="https://tuempresa.com" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contacto Principal -->
+                    <div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">👤 Contacto Principal</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Nombre Completo *</label>
+                                <input type="text" name="contactName" class="input-field" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Cargo *</label>
+                                <input type="text" name="position" class="input-field" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Correo Electrónico *</label>
+                                <input type="email" name="contactEmail" class="input-field" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Teléfono *</label>
+                                <input type="tel" name="contactPhone" class="input-field" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tipo de Alianza -->
+                    <div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">🎯 Tipo de Alianza</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">¿Qué tipo de alianza te interesa? *</label>
+                                <div class="space-y-3">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="allianceType" value="patrocinio" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Patrocinio Corporativo</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="allianceType" value="reclutamiento" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Reclutamiento de Talentos</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="allianceType" value="practicas" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Programa de Prácticas</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="allianceType" value="mentoria" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Programa de Mentoría</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="allianceType" value="proyectos" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Proyectos Conjuntos</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Presupuesto estimado para la alianza</label>
+                                <select name="budget" class="input-field">
+                                    <option value="">Selecciona un rango</option>
+                                    <option value="500k-1m">$500K - $1M COP</option>
+                                    <option value="1m-3m">$1M - $3M COP</option>
+                                    <option value="3m-5m">$3M - $5M COP</option>
+                                    <option value="5m+">Más de $5M COP</option>
+                                    <option value="por-definir">Por definir</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Necesidades Específicas -->
+                    <div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">📋 Necesidades Específicas</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">¿Qué perfiles te interesan más? *</label>
+                                <div class="space-y-3">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="profiles" value="desarrolladores" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Desarrolladores Web</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="profiles" value="marketing" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Marketing Digital</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="profiles" value="ia" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Especialistas en IA</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="profiles" value="emprendedores" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Emprendedores</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" name="profiles" value="remoto" class="text-primary focus:ring-primary" />
+                                        <span class="ml-3">Trabajo Remoto</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-inter font-semibold text-text-primary mb-2">Describe tus necesidades específicas</label>
+                                <textarea name="specificNeeds" class="input-field" rows="4" placeholder="Cuéntanos más sobre lo que buscas y cómo podemos colaborar."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Términos y Condiciones -->
+                    <div>
+                        <label class="flex items-start">
+                            <input type="checkbox" name="termsAccepted" class="mt-1 text-primary focus:ring-primary" required />
+                            <span class="ml-3 text-sm text-text-secondary">
+                                Acepto los <a href="#" class="text-primary hover:underline">Términos y Condiciones</a> y <a href="#" class="text-primary hover:underline">Política de Privacidad</a> para alianzas empresariales *
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary text-lg px-8 py-4">
+                            🤝 Enviar Solicitud de Alianza
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Script -->
+    <script src="../public/analytics.js"></script>
+    
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Form submission
+        document.getElementById('partnership-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Solicitud de alianza enviada exitosamente! Te contactaremos en las próximas 48 horas.');
+        });
+    </script>
+</body>
+</html> 

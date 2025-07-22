@@ -13,7 +13,12 @@
   "scripts": {
     "build:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css",
     "watch:css": "npx @dhiwise/component-tagger && npx tailwindcss -i ./css/tailwind.css -o ./css/main.css --watch",
-    "dev": "npm run watch:css"
+    "dev": "npm run watch:css",
+    "build": "npm run build:css",
+    "test:lighthouse": "lhci autorun",
+    "test:performance": "npm run test:lighthouse",
+    "serve": "npx http-server . -p 3000 -c-1",
+    "start": "npm run build && npm run serve"
   },
   "author": "",
   "license": "MIT",
@@ -22,6 +27,8 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/line-clamp": "^0.1.0",
-    "@tailwindcss/typography": "^0.5.16"
+    "@tailwindcss/typography": "^0.5.16",
+    "@lhci/cli": "^0.12.0",
+    "http-server": "^14.1.1"
   }
 }

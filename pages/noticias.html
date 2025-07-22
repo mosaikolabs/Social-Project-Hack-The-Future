@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Noticias y Blog - Hack The Future - Últimas noticias, historias de éxito y actualizaciones del programa." />
+    <meta name="keywords" content="noticias, blog, Hack The Future, actualizaciones, historias, programa" />
+    <meta name="author" content="Hack The Future" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Noticias y Blog - Hack The Future" />
+    <meta property="og:description" content="Últimas noticias, historias de éxito y actualizaciones del programa." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hackthefuture.org/pages/noticias.html" />
+    <meta property="og:image" content="/public/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Noticias y Blog" />
+    <meta name="twitter:description" content="Últimas noticias y historias de éxito." />
+    
+    <title>Noticias y Blog - Hack The Future</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../css/main.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/main.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Noticias y Blog",
+        "description": "Blog de Hack The Future con noticias y historias",
+        "url": "https://hackthefuture.org/pages/noticias.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Hack The Future"
+        }
+    }
+    </script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-subtle sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 20l6 6 10-12" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-inter font-bold text-primary">Hack The Future</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_mission_driven_impact_hub.html" class="text-text-secondary hover:text-primary transition-colors">Inicio</a>
+                    <a href="programs_hub_interactive_impact_explorer.html" class="text-text-secondary hover:text-primary transition-colors">Programas</a>
+                    <a href="get_involved_central_engagement_matching_platform.html" class="text-text-secondary hover:text-primary transition-colors">Participar</a>
+                    <a href="impact_stories_multimedia_success_showcase.html" class="text-text-secondary hover:text-primary transition-colors">Historias</a>
+                    <a href="about_ecosystem_organizational_transparency_hub.html" class="text-text-secondary hover:text-primary transition-colors">Acerca de</a>
+                    <a href="resource_center_educational_impact_hub.html" class="text-text-secondary hover:text-primary transition-colors">Recursos</a>
+                    <a href="community_platform_supporter_connection_network.html" class="text-text-secondary hover:text-primary transition-colors">Comunidad</a>
+                    <a href="contact_multi_channel_connection_hub.html" class="text-text-secondary hover:text-primary transition-colors">Contacto</a>
+                    <a href="donation_experience_impact_driven_giving_portal.html" class="btn-primary">Donar Ahora</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage_mission_driven_impact_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Inicio</a>
+                <a href="programs_hub_interactive_impact_explorer.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Programas</a>
+                <a href="get_involved_central_engagement_matching_platform.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Participar</a>
+                <a href="impact_stories_multimedia_success_showcase.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Historias</a>
+                <a href="about_ecosystem_organizational_transparency_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Acerca de</a>
+                <a href="resource_center_educational_impact_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Recursos</a>
+                <a href="community_platform_supporter_connection_network.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Comunidad</a>
+                <a href="contact_multi_channel_connection_hub.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contacto</a>
+                <a href="donation_experience_impact_driven_giving_portal.html" class="block mx-3 my-2 btn-primary text-center">Donar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-6">
+                Noticias y <span class="text-gradient-primary">Blog</span>
+            </h1>
+            <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                Mantente actualizado con las últimas noticias, historias de éxito y actualizaciones del programa Hack The Future.
+            </p>
+            
+            <!-- Blog Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-primary mb-2">25+</div>
+                    <div class="text-sm text-text-secondary">Artículos</div>
+                </div>
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-secondary mb-2">5</div>
+                    <div class="text-sm text-text-secondary">Categorías</div>
+                </div>
+                <div class="bg-surface p-6 rounded-lg">
+                    <div class="text-3xl font-bold text-accent mb-2">2.5K</div>
+                    <div class="text-sm text-text-secondary">Lectores Mensuales</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="py-8 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="category-btn active" data-category="todos">📰 Todos</button>
+                <button class="category-btn" data-category="noticias">📢 Noticias</button>
+                <button class="category-btn" data-category="historias">🌟 Historias de Éxito</button>
+                <button class="category-btn" data-category="eventos">🎉 Eventos</button>
+                <button class="category-btn" data-category="tecnologia">💻 Tecnología</button>
+                <button class="category-btn" data-category="comunidad">🤝 Comunidad</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="card featured-article">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="inline-block bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full mb-4">Destacado</span>
+                        <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">Primera Promoción de Hack The Future: 87% de Empleabilidad</h2>
+                        <p class="text-text-secondary mb-6">La primera promoción del programa Hack The Future ha logrado un impresionante 87% de tasa de empleabilidad, con graduados trabajando en empresas tecnológicas locales e internacionales.</p>
+                        <div class="flex items-center text-sm text-text-secondary mb-6">
+                            <span>📅 15 de Julio, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>👁️ 1.2K lecturas</span>
+                            <span class="mx-2">•</span>
+                            <span>🏷️ Noticias</span>
+                        </div>
+                        <button class="btn-primary">Leer Artículo Completo</button>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110cfe1?w=600&h=400&fit=crop" alt="Graduación Hack The Future" class="w-full h-64 object-cover rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Noticias -->
+                <article class="article-card noticias" data-category="noticias">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=250&fit=crop" alt="Demo Day 2024" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <div class="p-4">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mb-3">Noticias</span>
+                        <h3 class="font-inter font-bold text-lg text-text-primary mb-2">Demo Day 2024: Presentación de 15 Startups</h3>
+                        <p class="text-sm text-text-secondary mb-4">Quince startups desarrolladas por estudiantes de Hack The Future se presentaron ante un panel de inversores y empresarios en el Demo Day 2024.</p>
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>📅 10 de Julio, 2024</span>
+                            <span>👁️ 856 lecturas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Historias de Éxito -->
+                <article class="article-card historias" data-category="historias">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="Historia de María" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <div class="p-4">
+                        <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded mb-3">Historias de Éxito</span>
+                        <h3 class="font-inter font-bold text-lg text-text-primary mb-2">De Mesera a Desarrolladora: La Historia de María</h3>
+                        <p class="text-sm text-text-secondary mb-4">María Alejandra, ex mesera de Manrique, ahora trabaja como desarrolladora web ganando $1.200 USD mensuales gracias al programa Hack The Future.</p>
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>📅 8 de Julio, 2024</span>
+                            <span>👁️ 1.1K lecturas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Eventos -->
+                <article class="article-card eventos" data-category="eventos">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=250&fit=crop" alt="Workshop IA" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <div class="p-4">
+                        <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded mb-3">Eventos</span>
+                        <h3 class="font-inter font-bold text-lg text-text-primary mb-2">Workshop de IA: Chatbots y Automatización</h3>
+                        <p class="text-sm text-text-secondary mb-4">Más de 50 estudiantes participaron en el workshop intensivo de inteligencia artificial, aprendiendo a crear chatbots y automatizar procesos.</p>
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>📅 5 de Julio, 2024</span>
+                            <span>👁️ 723 lecturas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tecnología -->
+                <article class="article-card tecnologia" data-category="tecnologia">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop" alt="Tecnologías Web" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <div class="p-4">
+                        <span class="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded mb-3">Tecnología</span>
+                        <h3 class="font-inter font-bold text-lg text-text-primary mb-2">Las 5 Tecnologías Más Demandadas en 2024</h3>
+                        <p class="text-sm text-text-secondary mb-4">Un análisis de las tecnologías más solicitadas por las empresas y cómo Hack The Future prepara a sus estudiantes para estas demandas.</p>
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>📅 3 de Julio, 2024</span>
+                            <span>👁️ 945 lecturas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Comunidad -->
+                <article class="article-card comunidad" data-category="comunidad">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop" alt="Networking" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <div class="p-4">
+                        <span class="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded mb-3">Comunidad</span>
+                        <h3 class="font-inter font-bold text-lg text-text-primary mb-2">Networking Empresarial: Conectando Talentos</h3>
+                        <p class="text-sm text-text-secondary mb-4">El evento de networking reunió a 25 empresas con 80 estudiantes, generando más de 30 oportunidades de empleo y pasantías.</p>
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>📅 1 de Julio, 2024</span>
+                            <span>👁️ 678 lecturas</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Noticias -->
+                <article class="article-card noticias" data-category="noticias">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop" alt="Nuevos Mentores" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <div class="p-4">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mb-3">Noticias</span>
+                        <h3 class="font-inter font-bold text-lg text-text-primary mb-2">Se Incorporan 10 Nuevos Mentores al Programa</h3>
+                        <p class="text-sm text-text-secondary mb-4">Diez profesionales experimentados se unen al equipo de mentores de Hack The Future, ampliando las especialidades disponibles.</p>
+                        <div class="flex items-center justify-between text-xs text-text-secondary">
+                            <span>📅 28 de Junio, 2024</span>
+                            <span>👁️ 542 lecturas</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-16 bg-primary-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">📧 Suscríbete a Nuestras Noticias</h2>
+            <p class="text-text-secondary mb-8">Recibe las últimas noticias, historias de éxito y actualizaciones del programa directamente en tu correo.</p>
+            
+            <form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Tu correo electrónico" class="flex-1 input-field" required />
+                <button type="submit" class="btn-primary">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Analytics Script -->
+    <script src="../public/analytics.js"></script>
+    
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Category filtering
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const articleCards = document.querySelectorAll('.article-card');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                
+                // Update active button
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter articles
+                articleCards.forEach(card => {
+                    if (category === 'todos' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .category-btn {
+            @apply px-4 py-2 rounded-lg font-inter font-semibold transition-all duration-300;
+        }
+        .category-btn.active {
+            @apply bg-primary text-white;
+        }
+        .category-btn:not(.active) {
+            @apply bg-surface text-text-secondary hover:bg-primary-50;
+        }
+        .article-card {
+            @apply bg-surface rounded-lg shadow-subtle transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer;
+        }
+        .featured-article {
+            @apply bg-gradient-to-r from-primary-50 to-secondary-50;
+        }
+    </style>
+</body>
+</html> 
