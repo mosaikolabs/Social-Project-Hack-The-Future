@@ -2367,3 +2367,87 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
 }
+
+/* Estilos para el popup de aviso sobre datos ficticios */
+.data-notice-wrapper {
+  animation: slideInUp 0.5s ease-out;
+  transition: all 0.3s ease;
+}
+
+.data-notice-wrapper.hide-notice {
+  animation: slideOutDown 0.5s ease-in;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.data-notice-container {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.data-notice-content {
+  position: relative;
+}
+
+.message-block p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.data-notice-button-block button {
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.data-notice-button-block button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Animaciones para el popup */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+/* Responsive design para el popup */
+@media (max-width: 640px) {
+  .data-notice-wrapper {
+    left: 1rem;
+    right: 1rem;
+    max-width: none;
+    bottom: 1rem;
+  }
+  
+  .data-notice-container {
+    padding: 1rem;
+  }
+  
+  .data-notice-button-block {
+    justify-content: center;
+  }
+}
+
+/* Estilo para cuando el popup está oculto */
+.data-notice-wrapper.hidden {
+  display: none;
+}
